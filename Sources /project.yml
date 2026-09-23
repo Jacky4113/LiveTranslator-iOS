@@ -1,0 +1,19 @@
+name: LiveTranslator
+
+options:
+  bundleIdPrefix: com.jacky4113
+  deploymentTarget:
+    iOS: "17.0"
+
+targets:
+  LiveTranslator:
+    type: application
+    platform: iOS
+    sources:
+      - LiveTranslator.swift
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.jacky4113.livetranslator
+        INFOPLIST_KEY_NSMicrophoneUsageDescription: "LiveTranslator needs microphone access for speech translation."
+        INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: "LiveTranslator uses speech recognition to create subtitles."
+        SWIFT_VERSION: "5.0"
